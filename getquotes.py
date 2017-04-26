@@ -7,8 +7,9 @@ stocks = ['GOOG', 'RHT']
 
 for i in stocks:
     price = Share(i)
+    name = i
     if len(i) > 4:
-        i = i[:4]
+        name = i[:4]
     price2 = price.get_price()
     if len(price2) > 6:
         price2 = price2[:6]
@@ -17,9 +18,9 @@ for i in stocks:
         change = change[:5]
     print (i + ": " + price2 + " (", end="")
     if price.get_change()[:1] == "+":
-        print("\033[1;32m" + change + "\033[0;37m ) | href='https://ca.finance.yahoo.com/quote/" + i + "'")
+        print("\033[1;32m" + change + "\033[0;37m ) | href='https://ca.finance.yahoo.com/quote/" + i + "' refresh=true")
     elif price.get_change()[:1] == "-":
-        print("\033[1;31m" + change + "\033[0;37m ) | href='https://ca.finance.yahoo.com/quote/" + i + "'")
+        print("\033[1;31m" + change + "\033[0;37m ) | href='https://ca.finance.yahoo.com/quote/" + i + "' refresh=true")
 
 #If you use yahoo finance watchlist...
 #print("---")
