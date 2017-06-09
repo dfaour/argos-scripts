@@ -16,7 +16,7 @@ for i in stocks:
     change = price.get_change()
     if len(change) > 5:
         change = change[:5]
-    print (i + ": " + price2 + " (", end="")
+    print (name + ": " + price2 + " (", end="")
     if price.get_change()[:1] == "+":
         print("\033[1;32m" + change + "\033[0;37m ) | href='https://ca.finance.yahoo.com/quote/" + i + "' refresh=true")
     elif price.get_change()[:1] == "-":
