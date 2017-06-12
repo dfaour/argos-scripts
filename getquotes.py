@@ -28,4 +28,4 @@ try:
     #print("Portfolio... | href='https://ca.finance.yahoo.com/portfolio/p_0/view/v1'")
 
 except:
-    print("[Connection error...]")
+    print("[Connection error] | refresh=true")
