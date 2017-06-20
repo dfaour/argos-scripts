@@ -44,4 +44,7 @@ try:
         print("Portfolio... | href='https://ca.finance.yahoo.com/portfolio/p_0/view/v1'")
 
 except:
-    print("[Error] | refresh=true")
+    print("[Error]")
+    print("---")
+    print("[Refresh] | refresh=true")
+    exit()
