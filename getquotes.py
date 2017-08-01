@@ -21,13 +21,17 @@ try:
         if len(price2) > 6:
             price2 = price2[:6]
         change = price.get_change()
-        if len(change) > 5:
+        if change == None:
+            change = "0.00"
+        elif len(change) > 5:
             change = change[:5]
         print (name + ": " + price2 + " (", end="")
-        if price.get_change()[:1] == "+":
+        if change[:1] == "+":
             print("\033[1;32m" + change + "\033[0m) | href='https://ca.finance.yahoo.com/quote/" + i + "' refresh=true")
-        elif price.get_change()[:1] == "-":
+        elif change[:1] == "-":
             print("\033[1;31m" + change + "\033[0m) | href='https://ca.finance.yahoo.com/quote/" + i + "' refresh=true")
+        elif change[:1] == "0":
+            print("0.00) | href='https://ca.finance.yahoo.com/quote/" + i + "' refresh=true")
 
     if times == 1:
         print("---")
