@@ -15,6 +15,8 @@ Requires feedparser. To install:
 ## getquotes.py
 Will fetch quotes and changes for stocks. Edit the 'stocks' list for your desired list.
 
+*Version 2.0 uses Google Finance and does not need yahoo_finance anymore!*
+
 Requires yahoo_finance. To install:
 
 `pip3 install yahoo_finance`
