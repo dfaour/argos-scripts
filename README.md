@@ -24,4 +24,4 @@ Requires yahoo_finance. To install:
 To install the script in argos, copy it to ~/.config/argos and make it executable (chmod +x getquotes.py). Argos should pick it
 up automatically.
 
-April 25, 2017 (rev. Jun 8, 2017; August 17, 2017)
+April 25, 2017 (rev. Jun 8, 2017; August 17, 2017; August 24, 2017)
